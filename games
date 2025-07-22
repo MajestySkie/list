@@ -3,7 +3,7 @@ local games = {
     [129827112113663] = "https://raw.githubusercontent.com/MajestySkie/Prospecting/refs/heads/main/Prscting.lua",
 }
 
-local currentID = game.GameId
+local currentID = game.PlaceId
 local scriptURL = games[currentID]
 
 if scriptURL then
