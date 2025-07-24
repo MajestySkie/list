@@ -6,11 +6,7 @@ local games = {
 local currentID = game.PlaceId
 local scriptURL = games[currentID]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Loading/refs/heads/main/Entry"))()
-task.wait(2.2)
-
 if scriptURL then
     loadstring(game:HttpGet(scriptURL))()
 else
     game.Players.LocalPlayer:Kick("Yo! This game ain't on the list.\nCheck the Discord for whitelisted games, homie.")
-end
