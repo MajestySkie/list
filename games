@@ -4,7 +4,7 @@ local games = {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Loading/refs/heads/main/Entry"))()
-task.wait(2.4)
+task.wait(2.3)
 
 local currentID = game.PlaceId
 local scriptURL = games[currentID]
