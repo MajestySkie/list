@@ -3,9 +3,6 @@ local games = {
     [129827112113663] = "https://raw.githubusercontent.com/MajestySkie/Prospecting/refs/heads/main/Prscting.lua",
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Loading/refs/heads/main/Entry"))()
-task.wait(2.3)
-
 local currentID = game.PlaceId
 local scriptURL = games[currentID]
 
