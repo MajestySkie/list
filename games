@@ -1,16 +1,16 @@
 local games = {
-    [126244816328678] = "https://raw.githubusercontent.com/MajestySkie/DIG/refs/heads/main/DigDigDig.lua",
-    [129827112113663] = "https://raw.githubusercontent.com/MajestySkie/Prospecting/refs/heads/main/Prscting.lua",
-    [123921593837160] = "https://raw.githubusercontent.com/MajestySkie/Climb-And-Jump/refs/heads/main/Main.lua",
-    [102499196000712] = "https://raw.githubusercontent.com/MajestySkie/Climb-And-Jump/refs/heads/main/Main.lua",
-    [121864768012064] = "https://raw.githubusercontent.com/MajestySkie/Fish-It/refs/heads/main/Memancing.lua
+    ["126244816328678"] = "https://raw.githubusercontent.com/MajestySkie/DIG/refs/heads/main/DigDigDig.lua",
+    ["129827112113663"] = "https://raw.githubusercontent.com/MajestySkie/Prospecting/refs/heads/main/Prscting.lua",
+    ["123921593837160"] = "https://raw.githubusercontent.com/MajestySkie/Climb-And-Jump/refs/heads/main/Main.lua",
+    ["102499196000712"] = "https://raw.githubusercontent.com/MajestySkie/Climb-And-Jump/refs/heads/main/Main.lua",
+    ["121864768012064"] = "https://raw.githubusercontent.com/MajestySkie/Fish-It/refs/heads/main/Memancing.lua"
 }
 
-local currentID = game.PlaceId
+local currentID = tostring(game.GameId) -- gunakan GameId dan ubah ke string
 local scriptURL = games[currentID]
 
 if scriptURL then
     loadstring(game:HttpGet(scriptURL))()
 else
-    game.Players.LocalPlayer:Kick("Yo! This game ain't on the list.\nCheck the Discord for whitelisted games, homie.")
+    game.Players.LocalPlayer:Kick("❌ Game ini belum di-whitelist.\nJoin Discord untuk lihat list game yang didukung.")
 end
